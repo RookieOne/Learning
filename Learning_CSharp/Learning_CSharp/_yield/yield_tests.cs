@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 
-namespace Learning_CSharp.YieldTests
+namespace Learning_CSharp._yield
 {
     [TestFixture]
     public class yield_tests

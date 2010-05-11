@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Learning_CSharp.YieldTests
+namespace Learning_CSharp._yield
 {
     public static class LinqYieldExamples
     {
