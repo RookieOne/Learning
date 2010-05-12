@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1579C381-EC85-430B-A1C4-B1C93721F4E2}</ProjectGuid>
+    <ProjectGuid>{0D50B4AF-30F8-4067-A581-AF5CBE2EE3A9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Learning_NoRM</RootNamespace>
-    <AssemblyName>Learning_NoRM</AssemblyName>
+    <RootNamespace>MapTests</RootNamespace>
+    <AssemblyName>MapTests</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -53,11 +53,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Simple\Book.cs" />
-    <Compile Include="Simple\book_objectid_crud.cs" />
+    <Compile Include="basic_crud_with_Book_using_map.cs" />
+    <Compile Include="basic_crud_with_Customer_using_map.cs" />
+    <Compile Include="Maps\BookMap.cs" />
+    <Compile Include="Maps\CustomerMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Simple\Movie.cs" />
-    <Compile Include="Simple\movie_guid_crud.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{7559BBCF-5A74-4E8D-BB6E-26B3F3EED4B4}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestUtilities\TestUtilities.csproj">
+      <Project>{6BAC23AF-3469-4FF2-A92B-4C061CE75FB8}</Project>
+      <Name>TestUtilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

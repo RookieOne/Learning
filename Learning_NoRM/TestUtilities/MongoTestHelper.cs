@@ -1,6 +1,7 @@
 ﻿using Norm;
+using Norm.Linq;
 
-namespace Learning_NoRM
+namespace TestUtilities
 {
     public static class MongoTestHelper
     {
@@ -8,5 +9,10 @@ namespace Learning_NoRM
         {
             return new Mongo("test", "localhost", "27017", "");
         }
+
+        public static MongoQueryProvider create_query_provider()
+        {
+            return new MongoQueryProvider(create_new_database_connection());
+        }        
     }
 }

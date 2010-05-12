@@ -1,10 +1,10 @@
 using Norm;
 
-namespace Learning_NoRM.Simple
+namespace Domain
 {
     public class Book
     {
-        public ObjectId ID { get; set; }
+        public ObjectId Id { get; set; }
         public string Title { get; set; }
         public string Author { get; set; }
     }
