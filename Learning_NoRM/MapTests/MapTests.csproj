@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="basic_crud_with_Book_using_map.cs" />
     <Compile Include="basic_crud_with_Customer_using_map.cs" />
+    <Compile Include="customer_id_tests.cs" />
     <Compile Include="Maps\BookMap.cs" />
     <Compile Include="Maps\CustomerMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

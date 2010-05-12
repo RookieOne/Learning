@@ -54,7 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="basic_crud_with_Book.cs" />
-    <Compile Include="ids.cs" />
+    <Compile Include="IdTests\guid_with_identifier_attribute.cs" />
+    <Compile Include="IdTests\objectId.cs" />
     <Compile Include="objectid_not_labeled_as_id.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="try_to_insert_without_id.cs" />
