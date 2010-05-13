@@ -56,8 +56,13 @@
     <Compile Include="_ExtensionMethods\AssemblyA\BadFoo.cs" />
     <Compile Include="_ExtensionMethods\AssemblyA\GoodFoo.cs" />
     <Compile Include="_ExtensionMethods\AssemblyB\Bar.cs" />
+    <Compile Include="_ExtensionMethods\extending_an_interface.cs" />
+    <Compile Include="_ExtensionMethods\extending_a_value_type.cs" />
     <Compile Include="_ExtensionMethods\foo_example.cs" />
     <Compile Include="_ExtensionMethods\FooExtensions.cs" />
+    <Compile Include="_Linq\LinqAdditions\FuncEqualityComparer.cs" />
+    <Compile Include="_Linq\LinqAdditions\LinqExtensions.cs" />
+    <Compile Include="_Linq\LinqAdditions\using_func_distinct.cs" />
     <Compile Include="_yield\LinqYieldExamples.cs" />
     <Compile Include="_yield\yielding_jedis.cs" />
     <Compile Include="_yield\yield_tests.cs" />
