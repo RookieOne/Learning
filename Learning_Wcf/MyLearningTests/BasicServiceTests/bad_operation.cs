@@ -1,5 +1,4 @@
-﻿using System;
-using System.ServiceModel;
+﻿using System.ServiceModel;
 using NUnit.Framework;
 
 namespace MyLearningTests.BasicServiceTests
@@ -8,38 +7,42 @@ namespace MyLearningTests.BasicServiceTests
     public class bad_operation : host_basic_service
     {
         [Test]
-        [ExpectedException(typeof (FaultException))]
-        public void should_throw_fault_exception()
+        [ExpectedException(typeof(CommunicationObjectFaultedException))]
+        public void should_throw_communication_exception()
         {
+            try
+            {
+                _proxy.BadOperation();
+            }
+            catch
+            {
+            }
+
             _proxy.BadOperation();
         }
 
         [Test]
-        public void test()
+        [ExpectedException(typeof(FaultException))]
+        public void should_not_throw_communication_exception()
         {
             try
             {
                 _proxy.BadOperation();
             }
-            catch (Exception)
+            catch
             {
             }
 
-            try
-            {
-                _proxy.BadOperation();
-            }
-            catch (Exception)
-            {
-            }
+            create_proxy();
 
-            try
-            {
-                _proxy.BadOperation();
-            }
-            catch (Exception)
-            {
-            }
+            _proxy.BadOperation();
+        }
+
+        [Test]
+        [ExpectedException(typeof (FaultException))]
+        public void should_throw_fault_exception()
+        {
+            _proxy.BadOperation();
         }
     }
 }

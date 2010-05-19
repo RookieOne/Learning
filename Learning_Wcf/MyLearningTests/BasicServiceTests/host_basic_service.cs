@@ -17,7 +17,7 @@ namespace MyLearningTests.BasicServiceTests
         {
             start_host();
 
-            _proxy = new BasicServiceProxy();
+            create_proxy();
         }
 
         [TearDown]
@@ -26,16 +26,24 @@ namespace MyLearningTests.BasicServiceTests
             end_host();
         }
 
-        void start_host()
+        public void create_proxy()
+        {
+            _proxy = new BasicServiceProxy();
+        }
+
+        public void start_host()
         {
             var baseAddress = new Uri("http://localhost:9010/MyWcfServiceLibraryBasic");
             _host = new ServiceHost(typeof (BasicService), baseAddress);
+
+            var binding = new WSHttpBinding();
+            binding.SendTimeout = TimeSpan.FromMilliseconds(5);
 
             _host.AddServiceEndpoint(typeof (IBasicService), new WSHttpBinding(), "BasicService");
             _host.Open();
         }
 
-        void end_host()
+        public void end_host()
         {
             _host.Close();
         }

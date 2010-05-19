@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using MyContracts;
 
 namespace MyServices
@@ -12,6 +13,7 @@ namespace MyServices
 
         public void BadOperation()
         {
+            Thread.Sleep(TimeSpan.FromMilliseconds(10));
             throw new Exception("Bad Operation");
         }
     }
