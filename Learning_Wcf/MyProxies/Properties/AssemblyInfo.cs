@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MyWcfClientTests")]
+[assembly: AssemblyTitle("MyProxies")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("SolArc, Inc.")]
-[assembly: AssemblyProduct("MyWcfClientTests")]
-[assembly: AssemblyCopyright("Copyright © SolArc, Inc. 2010")]
+[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyProduct("MyProxies")]
+[assembly: AssemblyCopyright("Copyright © Microsoft 2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("24618bee-ee47-4936-b9b7-56e6d21e3c1b")]
+[assembly: Guid("dc11816a-cce7-49ed-8580-829ff123642b")]
 
 // Version information for an assembly consists of the following four values:
 //

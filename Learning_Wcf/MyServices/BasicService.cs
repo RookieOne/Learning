@@ -1,4 +1,6 @@
-namespace MyWcfServiceLibrary.Basic
+﻿using MyContracts;
+
+namespace MyServices
 {
     public class BasicService : IBasicService
     {

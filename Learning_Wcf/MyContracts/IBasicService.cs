@@ -1,6 +1,6 @@
 ﻿using System.ServiceModel;
 
-namespace MyWcfServiceLibrary.Basic
+namespace MyContracts
 {
     [ServiceContract]
     public interface IBasicService

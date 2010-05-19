@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{68C7CB5E-FE23-42CA-A8D3-18223832219D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{E7E17F03-8A72-4976-8DB8-54ED247D3C19}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WcfHostConsole</RootNamespace>
-    <AssemblyName>WcfHostConsole</AssemblyName>
+    <RootNamespace>MyProxies</RootNamespace>
+    <AssemblyName>MyProxies</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -48,13 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BasicServiceClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyWcfServiceLibrary\MyWcfServiceLibrary.csproj">
-      <Project>{E36A214C-AA0A-4C7C-8300-AC4C590D7DE1}</Project>
-      <Name>MyWcfServiceLibrary</Name>
+    <ProjectReference Include="..\MyContracts\MyContracts.csproj">
+      <Project>{AC324F42-D3EA-4A68-BD7F-7AD3F3341582}</Project>
+      <Name>MyContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyServices\MyServices.csproj">
+      <Project>{502A8895-7421-4B59-B37A-3B4E859A9847}</Project>
+      <Name>MyServices</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
