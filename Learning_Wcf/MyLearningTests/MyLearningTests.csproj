@@ -39,6 +39,9 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -49,14 +52,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BasicServices\get_message.cs" />
-    <Compile Include="BasicServices\host_basic_service.cs" />
+    <Compile Include="AssertExtensions.cs" />
+    <Compile Include="BasicServiceTests\bad_operation.cs" />
+    <Compile Include="BasicServiceTests\basic_service_tests.cs" />
+    <Compile Include="BasicServiceTests\get_message.cs" />
+    <Compile Include="BasicServiceTests\host_basic_service.cs" />
+    <Compile Include="FighterProviderTests\host_fighter_provider.cs" />
+    <Compile Include="FighterProviderTests\request_fighter_cover.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyContracts\MyContracts.csproj">
       <Project>{AC324F42-D3EA-4A68-BD7F-7AD3F3341582}</Project>
       <Name>MyContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyProxies\MyProxies.csproj">
+      <Project>{E7E17F03-8A72-4976-8DB8-54ED247D3C19}</Project>
+      <Name>MyProxies</Name>
     </ProjectReference>
     <ProjectReference Include="..\MyServices\MyServices.csproj">
       <Project>{502A8895-7421-4B59-B37A-3B4E859A9847}</Project>

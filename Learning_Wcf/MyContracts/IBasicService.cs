@@ -7,5 +7,8 @@ namespace MyContracts
     {
         [OperationContract]
         string GetMessage();
+
+        [OperationContract]
+        void BadOperation();
     }
 }

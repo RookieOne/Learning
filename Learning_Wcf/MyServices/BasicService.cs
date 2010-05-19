@@ -1,4 +1,5 @@
-﻿using MyContracts;
+﻿using System;
+using MyContracts;
 
 namespace MyServices
 {
@@ -7,6 +8,11 @@ namespace MyServices
         public string GetMessage()
         {
             return "Hello World";
+        }
+
+        public void BadOperation()
+        {
+            throw new Exception("Bad Operation");
         }
     }
 }
