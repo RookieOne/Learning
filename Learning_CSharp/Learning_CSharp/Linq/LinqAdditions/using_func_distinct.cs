@@ -3,7 +3,7 @@ using System.Linq;
 using Learning_CSharp.FauxDomain;
 using NUnit.Framework;
 
-namespace Learning_CSharp._Linq.LinqAdditions
+namespace Learning_CSharp.Linq.LinqAdditions
 {
     [TestFixture]
     public class using_func_distinct
@@ -13,11 +13,11 @@ namespace Learning_CSharp._Linq.LinqAdditions
         {
             var jedis = new[]
                             {
-                                new Jedi {Name = "Mace Windu"},
-                                new Jedi {Name = "Mace Windu"},
-                                new Jedi {Name = "Luke Skywalker"},
-                                new Jedi {Name = "Yoda"},
-                                new Jedi {Name = "Yoda"},
+                                new Jedi("Mace Windu"),
+                                new Jedi("Mace Windu"),
+                                new Jedi("Luke Skywalker"),
+                                new Jedi("Yoda"),
+                                new Jedi("Yoda"),
                             };
 
             IEnumerable<Jedi> distinct = jedis.Distinct((j1, j2) => j1.Name == j2.Name);

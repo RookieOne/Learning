@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
-using Learning_CSharp._Linq.LinqAdditions;
 
 namespace Learning_CSharp._yield
 {

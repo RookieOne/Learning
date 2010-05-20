@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace Learning_CSharp._Linq.LinqAdditions
+namespace Learning_CSharp.Linq.LinqAdditions
 {
     public static class LinqExtensions
     {

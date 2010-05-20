@@ -12,21 +12,21 @@ namespace Learning_CSharp._yield
         {
             return new List<Jedi>
                        {
-                           new Jedi {Name = "Obi-wan Kenobi"},
-                           new Jedi {Name = "Mace Windu"},
-                           new Jedi {Name = "Yoda"},
-                           new Jedi {Name = "Luke Skywalker"},
-                           new Jedi {Name = "Kyle Katarn"},
+                           new Jedi("Obi-wan Kenobi"),
+                           new Jedi("Mace Windu"),
+                           new Jedi("Yoda"),
+                           new Jedi("Luke Skywalker"),
+                           new Jedi("Kyle Katarn"),
                        };
         }
 
         IEnumerable<Jedi> GetJedisWithYield()
         {
-            yield return new Jedi {Name = "Obi-wan Kenobi"};
-            yield return new Jedi {Name = "Mace Windu"};
-            yield return new Jedi {Name = "Yoda"};
-            yield return new Jedi {Name = "Luke Skywalker"};
-            yield return new Jedi {Name = "Kyle Katarn"};
+            yield return new Jedi("Obi-wan Kenobi");
+            yield return new Jedi("Mace Windu");
+            yield return new Jedi("Yoda");
+            yield return new Jedi("Luke Skywalker");
+            yield return new Jedi("Kyle Katarn");
         }
 
         [Test]

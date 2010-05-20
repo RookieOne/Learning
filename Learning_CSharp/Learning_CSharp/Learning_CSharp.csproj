@@ -51,6 +51,9 @@
   <ItemGroup>
     <Compile Include="AssertExtensions.cs" />
     <Compile Include="FauxDomain\Jedi.cs" />
+    <Compile Include="FauxDomain\Fighter.cs" />
+    <Compile Include="FauxDomain\Starship.cs" />
+    <Compile Include="Linq\SelectMany\select_many_tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="_Enumerable\range.cs" />
     <Compile Include="_ExtensionMethods\AssemblyA\BadFoo.cs" />
@@ -60,9 +63,11 @@
     <Compile Include="_ExtensionMethods\extending_a_value_type.cs" />
     <Compile Include="_ExtensionMethods\foo_example.cs" />
     <Compile Include="_ExtensionMethods\FooExtensions.cs" />
-    <Compile Include="_Linq\LinqAdditions\FuncEqualityComparer.cs" />
-    <Compile Include="_Linq\LinqAdditions\LinqExtensions.cs" />
-    <Compile Include="_Linq\LinqAdditions\using_func_distinct.cs" />
+    <Compile Include="Linq\LinqAdditions\FuncEqualityComparer.cs" />
+    <Compile Include="Linq\LinqAdditions\LinqExtensions.cs" />
+    <Compile Include="Linq\LinqAdditions\using_func_distinct.cs" />
+    <Compile Include="Linq\Select\select_tests.cs" />
+    <Compile Include="Linq\Where\where_tests.cs" />
     <Compile Include="_yield\LinqYieldExamples.cs" />
     <Compile Include="_yield\yielding_jedis.cs" />
     <Compile Include="_yield\yield_tests.cs" />

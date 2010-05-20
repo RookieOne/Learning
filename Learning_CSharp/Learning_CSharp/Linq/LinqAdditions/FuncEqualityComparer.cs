@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Learning_CSharp._Linq.LinqAdditions
+namespace Learning_CSharp.Linq.LinqAdditions
 {
     public class FuncEqualityComparer<T> : IEqualityComparer<T>
     {
