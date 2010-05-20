@@ -19,9 +19,7 @@ namespace Basics
         public void should_return_same_instance_of_Foo()
         {
             var container = new Container();
-            container.Configure(x => x.For<IFoo>()
-                                         .Singleton()
-                                         .Use<Foo>());
+            container.Configure(x => x.For<IFoo>().Singleton().Use<Foo>());
 
             var foo1 = container.GetInstance<IFoo>();
             var foo2 = container.GetInstance<IFoo>();
