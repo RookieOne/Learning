@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics", "Basics\Basics.csproj", "{BC816F3F-2E4F-4B21-AF16-B2AFDDAA562A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUtilities", "TestUtilities\TestUtilities.csproj", "{CF0F1EAB-2398-450B-94EC-90F8CAF6C030}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC816F3F-2E4F-4B21-AF16-B2AFDDAA562A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC816F3F-2E4F-4B21-AF16-B2AFDDAA562A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC816F3F-2E4F-4B21-AF16-B2AFDDAA562A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC816F3F-2E4F-4B21-AF16-B2AFDDAA562A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF0F1EAB-2398-450B-94EC-90F8CAF6C030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF0F1EAB-2398-450B-94EC-90F8CAF6C030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF0F1EAB-2398-450B-94EC-90F8CAF6C030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF0F1EAB-2398-450B-94EC-90F8CAF6C030}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
