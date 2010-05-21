@@ -10,19 +10,16 @@ namespace Basics
         [SetUp]
         public void setup()
         {
-            var container = new Container();
+            _container = new Container();
 
-            container.Configure(x =>
-                                    {
-                                        x.For<IFoo>().Use<Foo>();
-                                        x.For<IBar>().Use<Bar>();
-                                    });
-
-            _bar = container.GetInstance<IBar>();
+            _container.Configure(x =>
+                                     {
+                                         x.For<IFoo>().Use<Foo>();
+                                         x.For<IBar>().Use<Bar>();
+                                     });
         }
 
-        IBar _bar;
-
+        IContainer _container;
 
         class Bar : IBar
         {
@@ -50,13 +47,17 @@ namespace Basics
         [Test]
         public void IBar_should_resolve_to_Bar()
         {
-            _bar.ShouldBeType<Bar>();
+            var bar = _container.GetInstance<IBar>();
+
+            bar.ShouldBeType<Bar>();
         }
 
         [Test]
         public void IBars_IFoo_dependency_should_resolve_to_Foo()
         {
-            _bar.Foo.ShouldBeType<Foo>();
+            var bar = _container.GetInstance<IBar>();
+
+            bar.Foo.ShouldBeType<Foo>();
         }
     }
 }

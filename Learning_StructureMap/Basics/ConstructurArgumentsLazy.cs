@@ -17,7 +17,7 @@ namespace Basics
                                          x.For<IIdProvider>().Use<IdProvider>();
                                          x.For<IBar>().Use<Bar>();
                                          x.For<IFoo>().Use<Foo>()
-                                             .Ctor<Func<int>>("id")
+                                             .Ctor<Func<int>>("getId")
                                              .Is(c => c.GetInstance<IIdProvider>().GetId);
                                      });
         }
@@ -28,13 +28,13 @@ namespace Basics
 
         class Foo : IFoo
         {
-            public Foo(Func<int> id, IBar bar)
+            public Foo(Func<int> getId, IBar bar)
             {
-                Id = id;
+                GetId = getId;
                 Bar = bar;
             }
 
-            public Func<int> Id { get; set; }
+            public Func<int> GetId { get; set; }
             public IBar Bar { get; set; }
         }
 
@@ -44,7 +44,7 @@ namespace Basics
 
         interface IFoo
         {
-            Func<int> Id { get; }
+            Func<int> GetId { get; }
             IBar Bar { get; }
         }
 
@@ -76,7 +76,7 @@ namespace Basics
         {
             var foo = _container.GetInstance<IFoo>();
 
-            foo.Id().ShouldBe(1);
+            foo.GetId().ShouldBe(1);
         }
     }
 }

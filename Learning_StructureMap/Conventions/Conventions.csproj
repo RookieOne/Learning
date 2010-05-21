@@ -61,6 +61,7 @@
     <Compile Include="WhatShouldBeRegistered\Entity.cs" />
     <Compile Include="WhatShouldBeRegistered\Foo.cs" />
     <Compile Include="WhatShouldBeRegistered\PersonController.cs" />
+    <Compile Include="WhatShouldBeRegistered\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestUtilities\TestUtilities.csproj">

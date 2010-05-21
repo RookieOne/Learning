@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 
 namespace TestUtilities.Extensions
 {
@@ -7,6 +8,11 @@ namespace TestUtilities.Extensions
         public static void ShouldBeType<T>(this object o)
         {
             Assert.IsInstanceOf(typeof (T), o);
+        }
+
+        public static void ShouldBeType(this object o, Type type)
+        {
+            Assert.IsInstanceOf(type, o);
         }
 
         public static void ShouldBeTheSameInstanceAs<T>(this T expected, T actual)
