@@ -53,6 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConstructorArguments.cs" />
+    <Compile Include="ConstructurArgumentsLazy.cs" />
     <Compile Include="NormalRegistration.cs" />
     <Compile Include="OpenGenericRegistration.cs" />
     <Compile Include="OpenGenericWithClosedGenericAlternative.cs" />
