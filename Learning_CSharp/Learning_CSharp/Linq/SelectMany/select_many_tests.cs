@@ -14,24 +14,24 @@ namespace Learning_CSharp.Linq.SelectMany
             var ship1 = new Starship("Chimera");
             ship1.Fighters.AddRange(new[]
                                         {
-                                            new Fighter(),
-                                            new Fighter(),
-                                            new Fighter(),
+                                            new FighterSquadron("Red"),
+                                            new FighterSquadron("Gold"),
+                                            new FighterSquadron("Blue"),
                                         });
             var ship2 = new Starship("Executor");
             ship2.Fighters.AddRange(new[]
                                         {
-                                            new Fighter(),
-                                            new Fighter(),
+                                            new FighterSquadron("Rogue"),
+                                            new FighterSquadron("Wraith"),
                                         });
             var ship3 = new Starship("Intrepid");
             ship3.Fighters.AddRange(new[]
                                         {
-                                            new Fighter(),
-                                            new Fighter(),
-                                            new Fighter(),
-                                            new Fighter(),
-                                            new Fighter(),
+                                            new FighterSquadron("Alpha"),
+                                            new FighterSquadron("Beta"),
+                                            new FighterSquadron("Gamma"),
+                                            new FighterSquadron("Ceta"),
+                                            new FighterSquadron("Omega"),
                                         });
 
             _starships = new[] {ship1, ship2, ship3};
@@ -46,7 +46,7 @@ namespace Learning_CSharp.Linq.SelectMany
             // [ Executor ] has [Fighter],[Fighter]
             // [ Intrepid ] has [Fighter],[Fighter],[Fighter],[Fighter],[Fighter]
 
-            IEnumerable<Fighter> fighters = _starships.SelectMany(s => s.Fighters);
+            IEnumerable<FighterSquadron> fighters = _starships.SelectMany(s => s.Fighters);
 
             // [ Fighter ]
             // [ Fighter ]

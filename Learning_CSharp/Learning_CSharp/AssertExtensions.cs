@@ -8,5 +8,10 @@ namespace Learning_CSharp
         {
             Assert.AreEqual(expected, actual);
         }
+
+        public static void ShouldNotBe<T>(this T actual, T expected)
+        {
+            Assert.AreNotEqual(expected, actual);
+        }
     }
 }

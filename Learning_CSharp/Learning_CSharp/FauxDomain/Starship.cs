@@ -7,11 +7,11 @@ namespace Learning_CSharp.FauxDomain
         public Starship(string name)
         {
             Name = name;
-            Fighters = new List<Fighter>();
+            Fighters = new List<FighterSquadron>();
         }
 
         public string Name { get; set; }
 
-        public List<Fighter> Fighters { get; set; }
+        public List<FighterSquadron> Fighters { get; set; }
     }
 }

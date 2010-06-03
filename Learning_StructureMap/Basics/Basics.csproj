@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConditionalBinding.cs" />
     <Compile Include="ConstructorArguments.cs" />
     <Compile Include="ConstructurArgumentsLazy.cs" />
     <Compile Include="NormalRegistration.cs" />

@@ -41,5 +41,32 @@ namespace Learning_CSharp.Linq.Where
 
             skywalkers.Count().ShouldBe(2);
         }
+
+        [Test]
+        public void redundant_first()
+        {
+            Jedi skywalker = _jedi
+                .Where(j => j.Name.EndsWith("Skywalker"))
+                .FirstOrDefault();
+
+            skywalker.ShouldNotBe(null);
+        }
+
+        [Test]
+        public void first()
+        {
+            Jedi skywalker = _jedi
+                .FirstOrDefault(j => j.Name.EndsWith("Skywalker"));
+
+            skywalker.ShouldNotBe(null);
+        }
+
+        [Test]
+        public void counts_vs_any()
+        {
+            var isEmpty = _jedi.Count() != 0;
+
+            var isEmpty2 = _jedi.Any();
+        }
     }
 }

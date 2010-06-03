@@ -19,7 +19,7 @@ namespace Learning_CSharp.Linq.LinqAdditions
                                 new Jedi("Yoda"),
                                 new Jedi("Yoda"),
                             };
-
+            
             IEnumerable<Jedi> distinct = jedis.Distinct((j1, j2) => j1.Name == j2.Name);
 
             distinct.Count().ShouldBe(3);
